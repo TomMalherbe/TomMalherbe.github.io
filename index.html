@@ -49,7 +49,7 @@ button {
 button {
     --c: goldenrod;
     color: var(--c);
-    font-size: 30px;
+    font-size: 1.8vw;
     border: 0.1em solid var(--c);
     border-radius: 1.5em;
     width: 20em ;
@@ -103,15 +103,16 @@ button span:nth-child(3) {
 button span:nth-child(4) {
     --n: 2;
 }
-.grandTitre{font-family: sans-serif;font-weight: bold;font-size:100px;color:white     ;transition: 1s;z-index: 1; position: absolute;}
-.texte{     font-family: sans-serif;font-weight: bold;font-size:30px ;color:goldenrod ;transition: 1s;z-index: 1; position: absolute;line-height: 2em;}
+.grandTitre{font-family: sans-serif;font-weight: bold;font-size:6vw;color:white     ;transition: 1s;z-index: 1; position: absolute;}
+.texte{     font-family: sans-serif;font-weight: bold;font-size:1.8vw ;color:goldenrod ;transition: 1s;z-index: 1; position: absolute;line-height: 2em;}
 
 
-#b{margin-top:13%;margin-left:40%;}
+#b{margin-top:13%;margin-left:40%;    text-transform: uppercase;
+}
 #Formation{margin-top:45%;margin-left:30%;} 
 #c{margin-top:22%;margin-left:42%;}
 #Enssat{margin-top:55%;margin-left:12%;}
-#Riga{margin-top:63%;margin-left:32%;font-size:20px ;}
+#Riga{margin-top:63%;margin-left:32%;font-size:1.2vw ;}
 
 #Clermont{margin-top:70%;margin-left:12%;}
 #Stchely{margin-top:85%;margin-left:12%;}
@@ -169,8 +170,8 @@ document.getElementById("c").onmouseover= function(){
 }
 function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("header").style.fontSize = "10px";
-        document.getElementById("header2").style.fontSize = "10px";
+    document.getElementById("header").style.fontSize = "1vw";
+        document.getElementById("header2").style.fontSize = "1vw";
 
 
         document.getElementById("Tom").style.width = "10%";
@@ -181,8 +182,8 @@ function scrollFunction() {
 
 
   } else {
-        document.getElementById("header").style.fontSize = "30px";
-        document.getElementById("header2").style.fontSize = "30px";
+        document.getElementById("header").style.fontSize = "1.8vw";
+        document.getElementById("header2").style.fontSize = "1.8vw";
         document.getElementById("Tom").style.width = "32%";
         document.getElementById("Tom").style.marginTop  = "15%";
         document.getElementById("Tom").style.marginLeft = "10%";
