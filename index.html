@@ -14,13 +14,24 @@ body {
 #Tom {
   border-radius: 50%;
   position: fixed;
-
+ 
   width:32%;
   height:auto;
   transition: 0.2s;
-  z-index: 5;
+  z-index: 6;
   margin-top : 15%;
   margin-left : 10%;
+
+}
+#Hobbb{
+  position: absolute;
+ 
+  width:32%;
+  height:auto;
+  transition: 0.2s;
+  z-index: 6;
+  margin-top : 205%;
+  margin-left : 45%;
 
 }
 #a {
@@ -33,6 +44,7 @@ body {
   font-size: 10px; 
   font-weight: bold;
   position: fixed;
+  z-index: 5;
 
   top: 0;
   width: 100%;
@@ -161,10 +173,37 @@ z-index:-1;
 #lecube2{margin-top:169%;margin-left:0.5%;border: 0.2vw solid black;border-radius: 4vw;width: 86vw ;height: 6vw;overflow: hidden;z-index: 4;transition: 0.5s;position:absolute;}
 #lecube3{margin-top:178%;margin-left:0.5%;border: 0.2vw solid black;border-radius: 4vw;width: 86vw ;height: 6vw;overflow: hidden;z-index: 4;transition: 0.5s;position:absolute;}
 #lecube4{margin-top:187%;margin-left:0.5%;border: 0.2vw solid black;border-radius: 4vw;width: 86vw ;height: 6vw;overflow: hidden;z-index: 4;transition: 0.5s;position:absolute;}
+
+#Hobbis{margin-top:207%;margin-left:2%;font-size:4vw;line-height: 3.5vw;z-index:14
+  overflow: hidden;
+  background: linear-gradient(to right, white , white 50%, goldenrod 50%);
+background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: -100%;
+  transition-delay:1s;
+  z-index: 14;
+}
+#lecube5{margin-top:201%;
+margin-left:40%;
+border-radius: 30% ;
+
+background: black;
+width: 40vw ;
+height: 40vw;
+overflow: hidden;
+z-index: 10;
+transition: 5s;
+position:absolute;}
+
+}
 </style>
 </head>
 <body>
   <img id="Tom" src="TomMalherbe.png"></img>
+  <img id="Hobbb" src="Hobbb.png"></img>
+
     <div id="a">
         <button id="header"> Formation
         <span></span><span></span><span></span><span></span>
@@ -224,6 +263,8 @@ Prix des Côtes-d'Armor obtenu lors du concours les  Entrep’  <br>(concours de
 <div classe="cue" id="lecube2"></div>
 <div classe="cue" id="lecube3"></div>
 <div classe="cue" id="lecube4"></div>
+<div classe="cue" id="lecube5"></div>
+<div class="texte" id="Hobbis"> Voyages<br><br> Volleyball<br><br>Sky,Alpinisme<br><br> Gadget éléctronique </Program></div> 
 
 <div class="texte" id="Date"> 2020<br><br><br>2020<br><br><br>2019-2020<br><br><br>2019</div>
 <script>
@@ -256,9 +297,6 @@ function scrollFunction() {
         document.getElementById("Tom").style.marginLeft = "1%";
 
 
-
-
-
   } else {
         document.getElementById("header").style.fontSize = "1.8vw";
         document.getElementById("header2").style.fontSize = "1.8vw";
@@ -271,8 +309,14 @@ function scrollFunction() {
         document.getElementById("Tom").style.marginLeft = "10%";
 
   }
-}
 
+  
+}
+document.getElementById("Hobbies").onmouseover=function(){
+  document.getElementById("lecube5").style.marginLeft="-10%";
+    document.getElementById("Hobbis").style.backgroundPosition="0";
+
+  };
 document.getElementById("Yo").onmouseover=function(){
   document.getElementById("Boule").style.marginTop  = "-20%";
     document.getElementById("Yo").style.color  = "black";
@@ -321,6 +365,8 @@ document.getElementById("lecube3").onmouseout=function(){this.style.borderColor 
 document.getElementById("lecube4").onmouseover=function(){this.style.borderColor  = "white";};
 document.getElementById("lecube4").onmouseout=function(){this.style.borderColor  = "black";
 };
+
+
 
 
 </script>
