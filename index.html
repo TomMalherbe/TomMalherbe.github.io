@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black ! important;
+  display: flex;
+  background-color: black;
+}
+
+#Tom {
+  border-radius: 50%;
+  position: fixed;
+
+  width:32%;
+  height:auto;
+  transition: 0.2s;
+  z-index: 3;
+  margin-top : 15%;
+  margin-left : 10%;
+
+}
+#a {
+      z-index: 2;
+
+  background-color: white;
+  padding: 5px 5px;
+  border: 0.3em solid black;
+  text-align: center;
+  font-size: 10px; 
+  font-weight: bold;
+  position: fixed;
+
+  top: 0;
+  width: 100%;
+  transition: 0.2s;
+}
+
+button {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #cfcbca;
+}
+
+button {
+    --c: goldenrod;
+    color: var(--c);
+    font-size: 30px;
+    border: 0.1em solid var(--c);
+    border-radius: 1.5em;
+    width: 20em ;
+    height: 5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 1em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 0.01em;
+}
+
+button span {
+    position: absolute;
+    width: 28%;
+    height: 110%;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.3s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+button:hover {
+    color: black;
+}
+
+button:hover span {
+    transform: translateY(0) scale(2);
+}
+
+button span:nth-child(1) {
+    --n: 1;
+}
+
+button span:nth-child(2) {
+    --n: 4;
+}
+
+button span:nth-child(3) {
+    --n: 3;
+}
+
+button span:nth-child(4) {
+    --n: 2;
+}
+.grandTitre{font-family: sans-serif;font-weight: bold;font-size:100px;color:white     ;transition: 1s;z-index: 1; position: absolute;}
+.texte{     font-family: sans-serif;font-weight: bold;font-size:30px ;color:goldenrod ;transition: 1s;z-index: 1; position: absolute;line-height: 2em;}
+
+
+#b{margin-top:13%;margin-left:40%;}
+#Formation{margin-top:45%;margin-left:30%;} 
+#c{margin-top:22%;margin-left:42%;}
+#Enssat{margin-top:55%;margin-left:12%;}
+#Riga{margin-top:63%;margin-left:32%;font-size:20px ;}
+
+#Clermont{margin-top:70%;margin-left:12%;}
+#Stchely{margin-top:85%;margin-left:12%;}
+
+#DateEnssat{margin-top:55%;margin-left:1%;line-height: 1.5em}
+#DateClermont{margin-top:70%;margin-left:1%;line-height: 1.5em}
+#DateStchely{margin-top:85%;margin-left:1%;line-height: 1.5em}
+#cercle {margin-top:20%;margin-left:40%;height: 10px; width: 10px;position: absolute;background-color: goldenrod !important;border: 5px solid black);border-radius: 50%;transition: 1s;}
+  
+#Motivation {width:80%;height:auto;transition: 0.2s;margin-top : 155%;margin-left : 10%;position:absolute;}
+#carte{width: 30%;height:auto;transition: 0.2s;margin-top : 57%;margin-left : 70%;position:absolute;}
+
+</style>
+</head>
+<body>
+  <img id="Tom" src="TomMalherbe.png"></img>
+    <div id="a">
+        <button id="header"> Lettre de Motivation
+        <span></span><span></span><span></span><span></span>
+        </button>
+        <button id="header2">CV
+        <span></span><span></span><span></span><span></span></button>
+</div>
+
+<div class="grandTitre" id="b"        >Tom Malherbe</div>
+<div class="grandTitre" id="Formation">Formation</div>
+<div class="texte" id="c"             >élève-ingénieur en systèmes numériques<br>tomalherb@enssat.fr<br>+33 6 52 95 04 01<br>Chateau 48260<br>Marchastel, France</div>
+<div class="texte" id="Enssat"> Enssat Lannion : Ecole nationale supérieure des   sciences<br> appliquées et de technologie Spécialité Systèmes Numériques</div>
+<div class="texte" id="Clermont">Ecole préparatoire au lycée La Fayette Clermont-Ferrand <br> Spécialité Mathématiques-physique </div>
+<div class="texte" id="Stchely"> Baccalauréat scientifique au lycée Théophile Roussel <br> mention très bien</div>
+
+<div class="texte" id="DateEnssat"> 2018-2021</div>
+<div class="texte" id="DateClermont"> 2016-2018</div>
+<div class="texte" id="DateStchely"> 2016</div>
+<div class="texte" id="Riga">Dont un semestre à L’Université Technique de Riga (Lettonie)</div>
+<img id="Motivation" src="0001.jpg"></img>
+<img id="carte" src="Carte.png"></img>
+<div id="cercle"></div> 
+<script>
+// When the user scrolls down 50px from the top of the document, resize the header's font size
+window.onscroll = function() {scrollFunction()};
+document.getElementById("b").onmouseover= function(){
+    if (document.getElementById("b").style.color=="goldenrod"){
+    document.getElementById("b").style.color="white";
+    }else{
+            document.getElementById("b").style.color="goldenrod";
+    }
+}
+document.getElementById("c").onmouseover= function(){
+    if (document.getElementById("c").style.color=="goldenrod"){
+    document.getElementById("c").style.color="white";
+    }else{
+            document.getElementById("c").style.color="goldenrod";
+    }
+}
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("header").style.fontSize = "10px";
+        document.getElementById("header2").style.fontSize = "10px";
+
+
+        document.getElementById("Tom").style.width = "10%";
+        document.getElementById("Tom").style.marginTop  = "1%";
+        document.getElementById("Tom").style.marginLeft = "1%";
+
+
+
+
+  } else {
+        document.getElementById("header").style.fontSize = "30px";
+        document.getElementById("header2").style.fontSize = "30px";
+        document.getElementById("Tom").style.width = "32%";
+        document.getElementById("Tom").style.marginTop  = "15%";
+        document.getElementById("Tom").style.marginLeft = "10%";
+
+  }
+}
+
+document.getElementById("Enssat").onmouseover=function(){document.getElementById("cercle").style. marginTop="64.5%";document.getElementById("cercle").style. marginLeft="73%";   document.getElementById("Enssat").style.color="white";   document.getElementById("Clermont").style.color="goldenrod";document.getElementById("Stchely").style.color="goldenrod";}
+document.getElementById("Clermont").onmouseover=function(){document.getElementById("cercle").style. marginTop="76%";   document.getElementById("cercle").style. marginLeft="86%";document.getElementById("Clermont").style.color="white";document.getElementById("Enssat").style.color="goldenrod";document.getElementById("Stchely").style.color="goldenrod";}
+document.getElementById("Stchely").onmouseover=function(){document.getElementById("cercle").style. marginTop="80%";document.getElementById("cercle").style. marginLeft="86%";document.getElementById("Stchely").style.color="white";document.getElementById("Enssat").style.color="goldenrod";document.getElementById("Clermont").style.color="goldenrod";}
+document.getElementById("header2").onclick=function(){
+       window.scrollTo(0,600);}
+ 
+document.getElementById("Riga").onmouseover=function(){document.getElementById("cercle").style. marginTop="60%";document.getElementById("cercle").style. marginLeft="100%";  }
+
+
+document.getElementById("header").onclick=function(){
+    window.scrollTo(0,800);}
+</script>
+
+</body>
+</html>
