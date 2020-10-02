@@ -18,7 +18,7 @@ body {
   width:32%;
   height:auto;
   transition: 0.2s;
-  z-index: 3;
+  z-index: 5;
   margin-top : 15%;
   margin-left : 10%;
 
@@ -52,7 +52,7 @@ button {
     font-size: 1.8vw;
     border: 0.1em solid var(--c);
     border-radius: 1.5em;
-    width: 20em ;
+    width: 10em ;
     height: 5em;
     text-transform: uppercase;
     font-weight: bold;
@@ -99,6 +99,8 @@ button span:nth-child(4) {--n: 2;}
 }
 #Formation{margin-top:45%;margin-left:30%;}
 #Competences{margin-top:100%;margin-left:30%;} 
+#Projets{margin-top:150%;margin-left:30%;} 
+#Hobbies{margin-top:195%;margin-left:30%;} 
 
 #c{margin-top:22%;margin-left:42%;}
 #Enssat{margin-top:55%;margin-left:12%;}
@@ -110,18 +112,18 @@ button span:nth-child(4) {--n: 2;}
 #DateEnssat{margin-top:57%;margin-left:1%;line-height: 1.5em}
 #DateClermont{margin-top:72%;margin-left:1%;line-height: 1.5em}
 #DateStchely{margin-top:87%;margin-left:1%;line-height: 1.5em}
+#Date{margin-top:162%;margin-left:2%;line-height: 1.6em}
 
 #cercle {margin-top:20%;margin-left:40%;height: 0.6vw; width: 0.6vw;position: absolute;background-color: goldenrod !important;border: 5px solid black);border-radius: 50%;transition: 1s;}
-#rectangle {margin-top:75%;margin-left:5%;height: 10vw;position: absolute; border: 0.1em solid goldenrod;border-radius: 1.5em;width: 2em ;background-color: black;transition: 1s;
+#rectangle {margin-top:75%;margin-left:5%;height: 10vw;position: absolute; border: 0.1em solid goldenrod;border-radius: 1.5em;width: 1.5vw ;background-color: black;transition: 1s;
 }
-#rectangle2 {margin-top:60%;margin-left:5%;height: 10vw;position: absolute; border: 0.1em solid goldenrod;border-radius: 1.5em;width: 2em ;background-color: black ;transition: 1s;
+#rectangle2 {margin-top:60%;margin-left:5%;height: 10vw;position: absolute; border: 0.1em solid goldenrod;border-radius: 1.5em;width: 1.5vw ;background-color: black ;transition: 1s;
 }
-#Motivation {width:80%;height:auto;transition: 0.2s;margin-top : 155%;margin-left : 10%;position:absolute;}
 #carte{width: 30%;height:auto;transition: 0.2s;margin-top : 57%;margin-left : 70%;position:absolute;}
 #Programmation{margin-top:125%;margin-left:12%;line-height: 2.5em;font-size:2vw;}
-#Techniques{margin-top:125%;margin-left:40%;line-height: 1.5em;font-size:2vw;}
+#Techniques{margin-top:125%;margin-left:37%;line-height: 1.5em;font-size:2vw;}
 #Langues{margin-top:125%;margin-left:75%;line-height: 2.5em;font-size:2vw;}
-
+#Stage{margin-top:160%;margin-left:12%;line-height: 1.5em;font-size:2vw;}
 #Yo{
       --c: goldenrod;
     color: var(--c);
@@ -153,21 +155,33 @@ background-color: white;
 transition: 1s;
 z-index:-1;
 }
+
+
+#lecube1{margin-top:160%;margin-left:0.5%;border: 0.2em solid black;position:absolute;border-radius: 4vw;height: 6vw;width:86vw;overflow: hidden;z-index: 4;transition: 0.5s;}
+#lecube2{margin-top:169%;margin-left:0.5%;border: 0.2em solid black;border-radius: 4vw;width: 86vw ;height: 6vw;overflow: hidden;z-index: 4;transition: 0.5s;position:absolute;}
+#lecube3{margin-top:178%;margin-left:0.5%;border: 0.2em solid black;border-radius: 4vw;width: 86vw ;height: 6vw;overflow: hidden;z-index: 4;transition: 0.5s;position:absolute;}
+#lecube4{margin-top:187%;margin-left:0.5%;border: 0.2em solid black;border-radius: 4vw;width: 86vw ;height: 6vw;overflow: hidden;z-index: 4;transition: 0.5s;position:absolute;}
 </style>
 </head>
 <body>
   <img id="Tom" src="TomMalherbe.png"></img>
     <div id="a">
-        <button id="header"> Lettre de Motivation
+        <button id="header"> Formation
         <span></span><span></span><span></span><span></span>
         </button>
-        <button id="header2">CV
+        <button id="header2">Competences
+        <span></span><span></span><span></span><span></span></button>
+        <button id="header3">Projets
+        <span></span><span></span><span></span><span></span></button>
+        <button id="header4">Hobbies
         <span></span><span></span><span></span><span></span></button>
 </div>
 
 <div class="grandTitre" id="b"        >Tom Malherbe</div>
 <div class="grandTitre" id="Formation">Formation</div>
 <div class="grandTitre" id="Competences">Competences</div>
+<div class="grandTitre" id="Projets">Projets</div>
+<div class="grandTitre" id="Hobbies">Hobbies</div>
 
 <div class="texte" id="c"             >élève-ingénieur en systèmes numériques<br>tomalherb@enssat.fr<br>+33 6 52 95 04 01<br>Chateau 48260<br>Marchastel, France</div>
 <div class="texte" id="Enssat"> Enssat Lannion : Ecole nationale supérieure des   sciences<br> appliquées et de technologie Spécialité Systèmes Numériques</div>
@@ -178,7 +192,6 @@ z-index:-1;
 <div class="texte" id="DateClermont"> 2016-2018</div>
 <div class="texte" id="DateStchely"> 2016</div>
 <div class="texte" id="Riga">Dont un semestre à L’Université Technique de Riga (Lettonie)</div>
-<img id="Motivation" src="0001.jpg"></img>
 <img id="carte" src="Carte.png"></img>
 <div id="cercle"></div>
 <div id="rectangle"></div>
@@ -189,9 +202,30 @@ z-index:-1;
                                         Langues
 <span id="Boule"></span></div>
 <div class="texte" id="Programmation"> VHDL <br> Matlab, Python <br>C, Java<br>Html, CSS, javascript</Program></div> 
-<div class="texte" id="Techniques">  <br>Traitement du signal<br> (filtrage,codage,modulation) <br><br>Systèmes de Télécommunication<br> (micro-ondes,design) <br></Program></div> 
+<div class="texte" id="Techniques"> Electronique numérique et<br>analogique <br> <br>Traitement du signal<br> (filtrage,codage,modulation,Seamcat) <br><br>Systèmes de Télécommunication<br> (micro-ondes,design) <br></Program></div> 
 <div class="texte" id="Langues">  Anglais (TOEIC 860)<br> Espagnol(niveau Lycée) <br>Letton (Base)<br> Japonais(Base) <br></Program></div> 
+<div class="texte" id="Stage">   Stage : Implémentation et validation du processeur RISC-V Comet  <br>sur plateforme FPGA  ( Inria, équipe Cairn, 7 semaines )
+<br>
+<br>
+ Etude de la compatibilité électromagnétique de 2 réseaux LTE FDD  deployés <br>
+ l'un à coté de l'autre utilisant les mêmes fréquences et technologies<br>
+<br>
 
+Prix des Côtes-d'Armor obtenu lors du concours les  Entrep’  <br>(concours de création d’entreprise en équipe)  avec le projet MeeP’lace
+<br>
+<br>
+ Identification biométrique et recherche de maladie par  phonocardiogramme <br> à l’aide d’un DSP (Digital Signal  Processor)
+<br>
+<br>
+
+
+</Program></div> 
+<div classe="cue" id="lecube1"></div>
+<div classe="cue" id="lecube2"></div>
+<div classe="cue" id="lecube3"></div>
+<div classe="cue" id="lecube4"></div>
+
+<div class="texte" id="Date"> 2020<br><br><br>2020<br><br><br>2019-2020<br><br><br>2019</div>
 <script>
 // When the user scrolls down 50px from the top of the document, resize the header's font size
 window.onscroll = function() {scrollFunction()};
@@ -213,6 +247,8 @@ function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     document.getElementById("header").style.fontSize = "1vw";
         document.getElementById("header2").style.fontSize = "1vw";
+        document.getElementById("header3").style.fontSize = "1vw";
+        document.getElementById("header4").style.fontSize = "1vw";
 
 
         document.getElementById("Tom").style.width = "10%";
@@ -226,6 +262,10 @@ function scrollFunction() {
   } else {
         document.getElementById("header").style.fontSize = "1.8vw";
         document.getElementById("header2").style.fontSize = "1.8vw";
+        document.getElementById("header3").style.fontSize = "1.8vw";
+        document.getElementById("header4").style.fontSize = "1.8vw";
+
+
         document.getElementById("Tom").style.width = "32%";
         document.getElementById("Tom").style.marginTop  = "15%";
         document.getElementById("Tom").style.marginLeft = "10%";
@@ -262,9 +302,25 @@ document.getElementById("Techniques").onmouseover=function(){
   document.getElementById("Programmation").style.color="goldenrod";
   document.getElementById("Langues").style.color="goldenrod";};
 
-document.getElementById("header").onclick=function(){
-    window.scrollTo(0,800);};
-    
+document.getElementById("header").onclick=function(){window.scrollTo(Formation.offsetLeft,Formation.offsetTop);};
+document.getElementById("header2").onclick=function(){window.scrollTo(Competences.offsetLeft,Competences.offsetTop);};
+document.getElementById("header3").onclick=function(){window.scrollTo(Projets.offsetLeft,Projets.offsetTop);};
+document.getElementById("header4").onclick=function(){window.scrollTo(Hobbies.offsetLeft,Hobbies.offsetTop);};
+
+
+
+document.getElementById("lecube1").onmouseover=function(){this.style.borderColor  = "white";};
+document.getElementById("lecube1").onmouseout=function(){this.style.borderColor  = "Black";
+};
+document.getElementById("lecube2").onmouseover=function(){this.style.borderColor  = "white";};
+document.getElementById("lecube2").onmouseout=function(){this.style.borderColor  = "black";
+};
+document.getElementById("lecube3").onmouseover=function(){this.style.borderColor  = "white";};
+document.getElementById("lecube3").onmouseout=function(){this.style.borderColor  = "black";
+};
+document.getElementById("lecube4").onmouseover=function(){this.style.borderColor  = "white";};
+document.getElementById("lecube4").onmouseout=function(){this.style.borderColor  = "black";
+};
 
 
 </script>
