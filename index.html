@@ -48,10 +48,10 @@ background: linear-gradient(90deg, rgba(96,92,88,1) 0%, rgba(104,92,77,1) 20%, r
   margin-left : 0%;
 
 }
-#a {
+#EncadreTitre {
       z-index: 2;
 
-  background-color: white;
+  background-color: #cfcbca;
   padding: 5px 5px;
   border: 0.3em solid black;
   text-align: center;
@@ -150,7 +150,7 @@ button span:nth-child(4) {--n: 2;}
 #Techniques{margin-top:125%;margin-left:35%;line-height: 1.5em;font-size:2vw;}
 #Langues{margin-top:125%;margin-left:75%;line-height: 2.5em;font-size:2vw;}
 #Stage{margin-top:160%;margin-left:12%;line-height: 1.5em;font-size:2vw;}
-#Yo{
+#Competenc{
       --c: goldenrod;
     color: var(--c);
 margin-top:110%;
@@ -169,7 +169,7 @@ overflow: hidden;
     transition: 0.5s;
 
 }
-#Yo span {
+#Competenc span {
 margin-top:+20%;
 margin-left:-110%;
 
@@ -183,35 +183,36 @@ z-index:-1;
 }
 
 
-#lecube1{margin-top:160%;margin-left:0.5%;border: 0.2vw solid black;position:absolute;border-radius: 4vw;height: 6vw;width:86vw;overflow: hidden;z-index: 4;transition: 0.5s;}
-#lecube1fond{margin-top:160%;margin-left:0.5%;border: 0.2vw solid black;position:absolute;border-radius: 4vw;height: 6vw;width:86vw;overflow: hidden;z-index: 0;transition: 0.5s;}
+#encadre1{margin-top:160%;margin-left:0.5%;border: 0.2vw solid black;position:absolute;border-radius: 4vw;height: 6vw;width:86vw;overflow: hidden;z-index: 4;transition: 0.5s;}
+#encadre1fond{margin-top:160%;margin-left:0.5%;position:absolute;border-radius: 4vw;height: 6vw;width:86vw;overflow: hidden;z-index: 0;transition: 0.5s;}
 
-#lecube2{margin-top:169%;margin-left:0.5%;border: 0.2vw solid black;border-radius: 4vw;width: 86vw ;height: 6vw;overflow: hidden;z-index: 4;transition: 0.5s;position:absolute;}
-#lecube2fond{margin-top:169%;margin-left:0.5%;border: 0.2vw solid black;position:absolute;border-radius: 4vw;height: 6vw;width:86vw;overflow: hidden;z-index: 0;transition: 0.5s;}
+#encadre2{margin-top:169%;margin-left:0.5%;border: 0.2vw solid black;border-radius: 4vw;width: 86vw ;height: 6vw;overflow: hidden;z-index: 4;transition: 0.5s;position:absolute;}
+#encadre2fond{margin-top:169%;margin-left:0.5%;position:absolute;border-radius: 4vw;height: 6vw;width:86vw;overflow: hidden;z-index: 0;transition: 0.5s;}
 
-#lecube3{margin-top:178%;margin-left:0.5%;border: 0.2vw solid black;border-radius: 4vw;width: 86vw ;height: 6vw;overflow: hidden;z-index: 4;transition: 0.5s;position:absolute;}
-#lecube3fond{margin-top:178%;margin-left:0.5%;border: 0.2vw solid black;border-radius: 4vw;width: 86vw ;height: 6vw;overflow: hidden;z-index: 0;transition: 0.5s;position:absolute;}
+#encadre3{margin-top:178%;margin-left:0.5%;border: 0.2vw solid black;border-radius: 4vw;width: 86vw ;height: 6vw;overflow: hidden;z-index: 4;transition: 0.5s;position:absolute;}
+#encadre3fond{margin-top:178%;margin-left:0.5%;border-radius: 4vw;width: 86vw ;height: 6vw;overflow: hidden;z-index: 0;transition: 0.5s;position:absolute;}
 
-#lecube4{margin-top:187%;margin-left:0.5%;border: 0.2vw solid black;border-radius: 4vw;width: 86vw ;height: 6vw;overflow: hidden;z-index: 4;transition: 0.5s;position:absolute;}
-#lecube4fond{margin-top:187%;margin-left:0.5%;border: 0.2vw solid black;border-radius: 4vw;width: 86vw ;height: 6vw;overflow: hidden;z-index: 0;transition: 0.5s;position:absolute;}
+#encadre4{margin-top:187%;margin-left:0.5%;border: 0.2vw solid black;border-radius: 4vw;width: 86vw ;height: 6vw;overflow: hidden;z-index: 4;transition: 0.5s;position:absolute;}
+#encadre4fond{margin-top:187%;margin-left:0.5%;border-radius: 4vw;width: 86vw ;height: 6vw;overflow: hidden;z-index: 0;transition: 0.5s;position:absolute;}
 
 #Hobbis{
-  margin-top:207%;
-margin-left:2%;
-font-size:3vw;
-line-height: 3vw;
-z-index:1;
-  overflow: hidden;
-  background: linear-gradient(to right, white , white 50%, goldenrod 50%);
-background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 200% 100%;
-  background-position: -100%;
-  transition-delay:1s;
+    margin-top:207%;
+    margin-left:2%;
+    font-size:3vw;
+    line-height: 3vw;
+    z-index:1;
+    overflow: hidden;
+    background: linear-gradient(to right, white , white 50%, goldenrod 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: -100%;
+    transition-delay:1s;
 }
 
 
+/* Hexagone de */
 
 .hex {--c: #0F0F0F;float: left;position:absolute; display:inline-block;  
 }
@@ -527,9 +528,9 @@ background-clip: text;
   <div class="hex" id="Hex9"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hex10"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hex11"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-    <div class="hex" id="Hex12"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex12"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hex13"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-    <div class="hex" id="Hex14"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hex14"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
   <div class="hex" id="Hex15"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hex16"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hex17"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
@@ -540,9 +541,9 @@ background-clip: text;
   <div class="hex" id="Hex22"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hex23"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hex24"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-    <div class="hex" id="Hex25"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex25"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hex26"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-    <div class="hex" id="Hex27"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hex27"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
   <div class="hex" id="Hex28"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id=Hex29><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hex30"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
@@ -553,7 +554,6 @@ background-clip: text;
   <div class="hex" id="Hex35"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hex36"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hex37"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-  
   <div class="hex" id="Hex-1"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
   <div class="hex" id="Hex-2"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hex-3"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
@@ -565,9 +565,9 @@ background-clip: text;
   <div class="hex" id="Hex-9"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hex-10"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hex-11"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-    <div class="hex" id="Hex-12"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-12"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hex-13"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-    <div class="hex" id="Hex-14"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hex-14"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
   <div class="hex" id="Hex-15"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hex-16"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hex-17"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
@@ -578,9 +578,9 @@ background-clip: text;
   <div class="hex" id="Hex-22"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hex-23"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hex-24"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-    <div class="hex" id="Hex-25"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-25"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hex-26"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-    <div class="hex" id="Hex-27"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hex-27"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
   <div class="hex" id="Hex-28"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id=Hex-29><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hex-30"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
@@ -603,9 +603,7 @@ background-clip: text;
   <div class="hex" id="Hex-47"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hex-48"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hex-49"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-  <div class="hex" id="Hex-50"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-  
-   
+  <div class="hex" id="Hex-50"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div> 
   <div class="hex" id="Hex-01"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
   <div class="hex" id="Hex-02"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hex-03"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
@@ -617,9 +615,9 @@ background-clip: text;
   <div class="hex" id="Hex-09"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hex-010"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hex-011"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-    <div class="hex" id="Hex-012"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-012"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hex-013"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-    <div class="hex" id="Hex-014"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hex-014"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
   <div class="hex" id="Hex-015"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hex-016"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hex-017"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
@@ -630,9 +628,9 @@ background-clip: text;
   <div class="hex" id="Hex-022"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hex-023"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hex-024"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-    <div class="hex" id="Hex-025"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-025"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hex-026"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-    <div class="hex" id="Hex-027"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hex-027"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
   <div class="hex" id="Hex-028"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id=Hex-029><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hex-030"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
@@ -655,9 +653,8 @@ background-clip: text;
   <div class="hex" id="Hex-047"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hex-048"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hex-049"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-  <div class="hex" id="Hex-050"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-  
-    <div class="hex" id="Hexa-1"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hex-050"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div> 
+  <div class="hex" id="Hexa-1"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
   <div class="hex" id="Hexa-2"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexa-3"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexa-4"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
@@ -668,9 +665,9 @@ background-clip: text;
   <div class="hex" id="Hexa-9"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexa-10"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexa-11"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-    <div class="hex" id="Hexa-12"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-12"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexa-13"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-    <div class="hex" id="Hexa-14"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hexa-14"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
   <div class="hex" id="Hexa-15"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexa-16"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexa-17"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
@@ -681,9 +678,9 @@ background-clip: text;
   <div class="hex" id="Hexa-22"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexa-23"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexa-24"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-    <div class="hex" id="Hexa-25"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-25"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexa-26"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-    <div class="hex" id="Hexa-27"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hexa-27"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
   <div class="hex" id="Hexa-28"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id=Hexa-29><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexa-30"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
@@ -707,8 +704,6 @@ background-clip: text;
   <div class="hex" id="Hexa-48"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexa-49"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexa-50"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-  
-   
   <div class="hex" id="Hexa-01"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
   <div class="hex" id="Hexa-02"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexa-03"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
@@ -720,26 +715,26 @@ background-clip: text;
   <div class="hex" id="Hexa-09"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexa-010"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexa-011"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-    <div class="hex" id="Hexa-012"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-012"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexa-013"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-    <div class="hex" id="Hexa-014"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hexa-014"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexa-015"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexa-016"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexa-017"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-  <div class="hex" id="Hexa-018"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hexa-018"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexa-019"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexa-020"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexa-021"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexa-022"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexa-023"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexa-024"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-    <div class="hex" id="Hexa-025"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-025"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexa-026"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-    <div class="hex" id="Hexa-027"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hexa-027"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexa-028"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-  <div class="hex" id=Hexa-029><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-029"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexa-030"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-  <div class="hex" id="Hexa-031"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hexa-031"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexa-032"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexa-033"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexa-034"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
@@ -748,7 +743,7 @@ background-clip: text;
   <div class="hex" id="Hexa-037"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexa-038"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexa-039"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-  <div class="hex" id="Hexa-040"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hexa-040"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexa-041"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexa-042"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexa-043"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
@@ -759,8 +754,7 @@ background-clip: text;
   <div class="hex" id="Hexa-048"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexa-049"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexa-050"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-   
-    <div class="hex" id="Hexaa-1"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-1"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
   <div class="hex" id="Hexaa-2"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexaa-3"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexaa-4"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
@@ -771,9 +765,9 @@ background-clip: text;
   <div class="hex" id="Hexaa-9"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexaa-10"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexaa-11"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-    <div class="hex" id="Hexaa-12"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-12"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexaa-13"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-    <div class="hex" id="Hexaa-14"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-14"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
   <div class="hex" id="Hexaa-15"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexaa-16"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexaa-17"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
@@ -784,9 +778,9 @@ background-clip: text;
   <div class="hex" id="Hexaa-22"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexaa-23"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexaa-24"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-    <div class="hex" id="Hexaa-25"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-25"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexaa-26"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-    <div class="hex" id="Hexaa-27"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-27"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
   <div class="hex" id="Hexaa-28"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id=Hexaa-29><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexaa-30"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
@@ -810,8 +804,6 @@ background-clip: text;
   <div class="hex" id="Hexaa-48"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexaa-49"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexaa-50"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-  
-   
   <div class="hex" id="Hexaa-01"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
   <div class="hex" id="Hexaa-02"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexaa-03"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
@@ -823,9 +815,9 @@ background-clip: text;
   <div class="hex" id="Hexaa-09"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexaa-010"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexaa-011"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-    <div class="hex" id="Hexaa-012"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-012"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexaa-013"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-    <div class="hex" id="Hexaa-014"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-014"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
   <div class="hex" id="Hexaa-015"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexaa-016"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexaa-017"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
@@ -836,11 +828,11 @@ background-clip: text;
   <div class="hex" id="Hexaa-022"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexaa-023"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexaa-024"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-    <div class="hex" id="Hexaa-025"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-025"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexaa-026"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-    <div class="hex" id="Hexaa-027"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-027"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
   <div class="hex" id="Hexaa-028"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-  <div class="hex" id=Hexaa-029><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-029"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexaa-030"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexaa-031"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
   <div class="hex" id="Hexaa-032"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
@@ -862,7 +854,7 @@ background-clip: text;
   <div class="hex" id="Hexaa-048"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexaa-049"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexaa-050"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
-   <div class="hex" id="Hexaa-051"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-051"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
   <div class="hex" id="Hexaa-060"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexaa-052"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexaa-053"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
@@ -879,19 +871,14 @@ background-clip: text;
   <div class="hex" id="Hexaa-064"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
   <div class="hex" id="Hexaa-065"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
 
-
-    <div id="a">
-        <button id="header">.<br>Formation<br>.
-        <span></span><span></span><span></span><span></span>
-        </button>
-        <button id="header2">.<br>Competences<br>.
-        <span></span><span></span><span></span><span></span></button>
-        <button id="header3">Projets <br> Expérience pro
-        <span></span><span></span><span></span><span></span></button>
-        <button id="header4">.<br>Hobbies<br>.
-        <span></span><span></span><span></span><span></span></button>
+<div id="EncadreTitre">
+    <button id="header">.<br>Formation<br>.<span></span><span></span><span></span><span></span></button>
+    <button id="header2">.<br>Competences<br>.<span></span><span></span><span></span><span></span></button>
+    <button id="header3">Projets <br> Expérience pro<span></span><span></span><span></span><span></span></button>
+    <button id="header4">.<br>Hobbies<br>.<span></span><span></span><span></span><span></span></button>
 </div>
 
+<div class="grandTitre"></div>
 <div class="grandTitre" id="b"        >Tom Malherbe</div>
 <div class="grandTitre" id="Formation">Formation</div>
 <div class="grandTitre" id="Competences">Compétences</div>
@@ -902,59 +889,37 @@ background-clip: text;
 <div class="texte" id="Enssat"> Enssat Lannion : Ecole nationale supérieure des   sciences<br> appliquées et de technologie Spécialité Systèmes Numériques</div>
 <div class="texte" id="Clermont">CPGE au lycée La Fayette Clermont-Ferrand <br> Spécialité Mathématiques-physique </div>
 <div class="texte" id="Stchely"> Baccalauréat scientifique au lycée Théophile Roussel <br> Saint-Chely d'Apcher   : mention très bien</div>
-
 <div class="texte" id="DateEnssat"> 2018-2021</div>
 <div class="texte" id="DateClermont"> 2016-2018</div>
 <div class="texte" id="DateStchely"> 2016</div>
 <div class="texte" id="Riga">Dont un semestre à L’Université Technique de Riga (Lettonie)</div>
+<div class="texte" id="Competenc"> Programmation   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbspTechniques   &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp&nbspLangues  &nbsp&nbsp&nbsp<span id="Boule"></span></div>
+<div class="texte" id="Programmation"> VHDL <br> Matlab, Python <br>C, Java<br>Html, CSS, javascript</Program></div> 
+<div class="texte" id="Techniques"> Electronique numérique et<br>analogique <br> <br>Traitement du signal<br> (filtrage, codage, modulation, Seamcat) <br><br>Systèmes de Télécommunication<br> (micro-ondes, design) <br></Program></div> 
+<div class="texte" id="Langues">  Anglais (TOEIC 860)<br> Espagnol (niveau Lycée) <br>Letton (Bases)<br> Japonais (Bases) <br></Program></div> 
+<div class="texte" id="Stage">   Stage : Implémentation et validation du processeur RISC-V Comet  <br>sur plateforme FPGA  ( Inria, équipe Cairn, 7 semaines )<br><br>Projet : Etude de la compatibilité électromagnétique de 2 réseaux LTE FDD  <br> deéloyésl'un à coté de l'autre utilisant les mêmes fréquences et technologies<br><br>Projet : Prix des Côtes-d'Armor obtenu lors du concours les  Entrep’  <br>(concours de création d’entreprise en équipe)  avec le projet MeeP’lace<br><br>Projet : Identification biométrique et recherche de maladie par <br>  phonocardiogramme à l’aide d’un DSP (Digital Signal  Processor)<br><br></Program></div>
+<div class="texte" id="Hobbis"> Voyages<br><br> Volleyball<br><br>Ski, Alpinisme<br><br> Gadget électronique </Program></div> 
+<div class="texte" id="Date"> 2020<br><br><br>2020<br><br><br>2019-2020<br><br><br>2019</div>
+
 <img id="carte" src="Carte.png"></img>
 <div id="cercle"></div>
 <div id="rectangle"></div>
 <div id="rectangle2"></div>
 
-<div class="texte" id="Yo">     Programmation   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp
-                                        Techniques   &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp
-                                        Langues  &nbsp&nbsp&nbsp
-<span id="Boule"></span></div>
-<div class="texte" id="Programmation"> VHDL <br> Matlab, Python <br>C, Java<br>Html, CSS, javascript</Program></div> 
-<div class="texte" id="Techniques"> Electronique numérique et<br>analogique <br> <br>Traitement du signal<br> (filtrage, codage, modulation, Seamcat) <br><br>Systèmes de Télécommunication<br> (micro-ondes, design) <br></Program></div> 
-<div class="texte" id="Langues">  Anglais (TOEIC 860)<br> Espagnol (niveau Lycée) <br>Letton (Bases)<br> Japonais (Bases) <br></Program></div> 
-<div class="texte" id="Stage">   Stage : Implémentation et validation du processeur RISC-V Comet  <br>sur plateforme FPGA  ( Inria, équipe Cairn, 7 semaines )
-<br>
-<br>
-Projet : Etude de la compatibilité électromagnétique de 2 réseaux LTE FDD  <br> deéloyés
- l'un à coté de l'autre utilisant les mêmes fréquences et technologies<br>
-<br>
-
-Projet : Prix des Côtes-d'Armor obtenu lors du concours les  Entrep’  <br>(concours de création d’entreprise en équipe)  avec le projet MeeP’lace
-<br>
-<br>
- Projet : Identification biométrique et recherche de maladie par <br>  phonocardiogramme à l’aide d’un DSP (Digital Signal  Processor)
-<br>
-<br>
+<div classe="encadre" id="encadre1"></div>
+<div classe="encadre" id="encadre1fond"></div>
+<div classe="encadre" id="encadre2fond"></div>
+<div classe="encadre" id="encadre3fond"></div>
+<div classe="encadre" id="encadre4fond"></div>
+<div classe="encadre" id="encadre2"></div>
+<div classe="encadre" id="encadre3"></div>
+<div classe="encadre" id="encadre4"></div>
 
 
-</Program></div> 
-<div classe="cue" id="lecube1"></div>
-<div classe="cue" id="lecube1fond"></div>
-<div classe="cue" id="lecube2fond"></div>
-<div classe="cue" id="lecube3fond"></div>
-<div classe="cue" id="lecube4fond"></div>
-
-<div classe="cue" id="lecube2"></div>
-<div classe="cue" id="lecube3"></div>
-<div classe="cue" id="lecube4"></div>
-<div classe="cue" id="lecube5"></div>
-<div classe="cue" id="lecube6"></div>
-
-<div class="texte" id="Hobbis"> Voyages<br><br> Volleyball<br><br>Ski, Alpinisme<br><br> Gadget électronique </Program></div> 
-
-<div class="texte" id="Date"> 2020<br><br><br>2020<br><br><br>2019-2020<br><br><br>2019</div>
 <script>
-// When the user scrolls down 50px from the top of the document, resize the header's font size
 window.onscroll = function() {scrollFunction()};
 document.getElementById("b").onmouseover= function(){
-    if (document.getElementById("b").style.color=="goldenrod"){
+  if (document.getElementById("b").style.color=="goldenrod"){
     document.getElementById("b").style.color="white";
     }else{
             document.getElementById("b").style.color="goldenrod";
@@ -973,90 +938,44 @@ function scrollFunction() {
         document.getElementById("header2").style.fontSize = "1vw";
         document.getElementById("header3").style.fontSize = "1vw";
         document.getElementById("header4").style.fontSize = "1vw";
-
-
         document.getElementById("Tom").style.width = "10%";
         document.getElementById("Tom").style.marginTop  = "1%";
         document.getElementById("Tom").style.marginLeft = "1%";
-
-
   } else {
         document.getElementById("header").style.fontSize = "1.8vw";
         document.getElementById("header2").style.fontSize = "1.8vw";
         document.getElementById("header3").style.fontSize = "1.8vw";
         document.getElementById("header4").style.fontSize = "1.8vw";
-
-
         document.getElementById("Tom").style.width = "32%";
         document.getElementById("Tom").style.marginTop  = "15%";
         document.getElementById("Tom").style.marginLeft = "10%";
-
-  }
-
-  
+  } 
 }
-document.getElementById("Hobbies").onmouseover=function(){
-  document.getElementById("lecube5").style.marginLeft="-10%";
-    document.getElementById("Hobbis").style.backgroundPosition="0";
-
-  };
-document.getElementById("Yo").onmouseover=function(){
-  document.getElementById("Boule").style.marginTop  = "-20%";
-    document.getElementById("Yo").style.color  = "black";
-};
-  document.getElementById("Yo").onmouseout=function(){
-  document.getElementById("Boule").style.marginTop  = "+20%";
-    document.getElementById("Yo").style.color  = "goldenrod";
-};
-
+document.getElementById("Hobbies").onmouseover=function(){document.getElementById("Hobbis").style.backgroundPosition="0";};
+document.getElementById("Competenc").onmouseover=function(){document.getElementById("Boule").style.marginTop  = "-20%";document.getElementById("Competenc").style.color  = "black";};
+document.getElementById("Competenc").onmouseout=function(){document.getElementById("Boule").style.marginTop  = "+20%";document.getElementById("Competenc").style.color  = "goldenrod";};
 document.getElementById("Enssat").onmouseover=function(){document.getElementById("cercle").style. marginTop="64.5%";document.getElementById("cercle").style. marginLeft="73%";   document.getElementById("Enssat").style.color="white";   document.getElementById("Clermont").style.color="goldenrod";document.getElementById("Stchely").style.color="goldenrod";};
 document.getElementById("Clermont").onmouseover=function(){document.getElementById("cercle").style. marginTop="76%";   document.getElementById("cercle").style. marginLeft="86%";document.getElementById("Clermont").style.color="white";document.getElementById("Enssat").style.color="goldenrod";document.getElementById("Stchely").style.color="goldenrod";};
 document.getElementById("Stchely").onmouseover=function(){document.getElementById("cercle").style. marginTop="80%";document.getElementById("cercle").style. marginLeft="86%";document.getElementById("Stchely").style.color="white";document.getElementById("Enssat").style.color="goldenrod";document.getElementById("Clermont").style.color="goldenrod";};
 document.getElementById("header2").onclick=function(){window.scrollTo(0,600);};
 document.getElementById("Riga").onmouseover=function(){document.getElementById("cercle").style. marginTop="60%";document.getElementById("cercle").style. marginLeft="100%";  };
-
-
 document.getElementById("Programmation").onmouseover=function(){ document.getElementById("Programmation").style.color="white";document.getElementById("Langues").style.color="goldenrod";document.getElementById("Techniques").style.color="goldenrod";};
-  
-  
-document.getElementById("Langues").onmouseover=function(){
-  document.getElementById("Langues").style.color="white";
-  document.getElementById("Programmation").style.color="goldenrod";
-  document.getElementById("Techniques").style.color="goldenrod";};
-  
-document.getElementById("Techniques").onmouseover=function(){
-  document.getElementById("Techniques").style.color="white";
-  document.getElementById("Programmation").style.color="goldenrod";
-  document.getElementById("Langues").style.color="goldenrod";};
-
-document.getElementById("header").onclick=function(){window.scrollTo(0,Formation.offsetTop);};
-document.getElementById("header2").onclick=function(){window.scrollTo(0,Competences.offsetTop);};
-document.getElementById("header3").onclick=function(){window.scrollTo(0,Projets.offsetTop);};
-document.getElementById("header4").onclick=function(){window.scrollTo(0,Hobbies.offsetTop);
-
-
-document.getElementById("lecube5").style.marginLeft="-10%";
-document.getElementById("Hobbis").style.backgroundPosition="0";
-};
+document.getElementById("Langues").onmouseover=function(){document.getElementById("Langues").style.color="white";document.getElementById("Programmation").style.color="goldenrod";document.getElementById("Techniques").style.color="goldenrod";}; 
+document.getElementById("Techniques").onmouseover=function(){document.getElementById("Techniques").style.color="white";document.getElementById("Programmation").style.color="goldenrod";document.getElementById("Langues").style.color="goldenrod";};
+document.getElementById("header").onclick=function(){window.scrollTo(0,Formation.offsetTop-100);};
+document.getElementById("header2").onclick=function(){window.scrollTo(0,Competences.offsetTop-100);};
+document.getElementById("header3").onclick=function(){window.scrollTo(0,Projets.offsetTop-100);};
+document.getElementById("header4").onclick=function(){window.scrollTo(0,Hobbies.offsetTop-100);
+document.getElementById("Hobbis").style.backgroundPosition="0";};
 document.getElementById("Tom").onclick=function(){window.scrollTo(0,0);}
-
-
-
-document.getElementById("lecube1").onmouseover=function(){this.style.borderColor  = "white";document.getElementById("lecube1fond").style.backgroundColor = "#222222";};
-document.getElementById("lecube1").onmouseout=function(){this.style.borderColor  = "Black";document.getElementById("lecube1fond").style.backgroundColor = "transparent";
-};
-document.getElementById("lecube2").onmouseover=function(){this.style.borderColor  = "white";document.getElementById("lecube2fond").style.backgroundColor = "#222222";};
-document.getElementById("lecube2").onmouseout=function(){this.style.borderColor  = "Black";document.getElementById("lecube2fond").style.backgroundColor = "transparent";
-};
-document.getElementById("lecube3").onmouseover=function(){this.style.borderColor  = "white";document.getElementById("lecube3fond").style.backgroundColor = "#222222";};
-document.getElementById("lecube3").onmouseout=function(){this.style.borderColor  = "Black";document.getElementById("lecube3fond").style.backgroundColor = "transparent";
-};
-document.getElementById("lecube4").onmouseover=function(){this.style.borderColor  = "white";document.getElementById("lecube4fond").style.backgroundColor = "#222222";};
-document.getElementById("lecube4").onmouseout=function(){this.style.borderColor  = "Black";document.getElementById("lecube4fond").style.backgroundColor = "transparent";
-};
-
-
-
+document.getElementById("encadre1").onmouseover=function(){this.style.borderColor  = "white";document.getElementById("encadre1fond").style.backgroundColor = "#222222";};
+document.getElementById("encadre1").onmouseout=function(){this.style.borderColor  = "transparent";document.getElementById("encadre1fond").style.backgroundColor = "transparent";};
+document.getElementById("encadre2").onmouseover=function(){this.style.borderColor  = "white";document.getElementById("encadre2fond").style.backgroundColor = "#222222";};
+document.getElementById("encadre2").onmouseout=function(){this.style.borderColor  = "transparent";document.getElementById("encadre2fond").style.backgroundColor = "transparent";};
+document.getElementById("encadre3").onmouseover=function(){this.style.borderColor  = "white";document.getElementById("encadre3fond").style.backgroundColor = "#222222";};
+document.getElementById("encadre3").onmouseout=function(){this.style.borderColor  = "transparent";document.getElementById("encadre3fond").style.backgroundColor = "transparent";};
+document.getElementById("encadre4").onmouseover=function(){this.style.borderColor  = "white";document.getElementById("encadre4fond").style.backgroundColor = "#222222";};
+document.getElementById("encadre4").onmouseout=function(){this.style.borderColor  = "transparent";document.getElementById("encadre4fond").style.backgroundColor = "transparent";};
 
 </script>
 
