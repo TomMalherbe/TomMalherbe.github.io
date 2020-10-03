@@ -98,12 +98,12 @@ button {
 
 button span {
     position: absolute;
-    width: 28%;
-    height: 110%;
+    width: 58%;
+    height: 150%;
     background-color: var(--c);
     transform: translateY(150%);
     border-radius: 50%;
-    left: calc((var(--n) - 1) * 25%);
+    left: calc((var(--n) - 2.5) * 25%);
     transition: 0.3s;
     transition-delay: calc((var(--n) - 1) * 0.1s);
     z-index: -1;
@@ -113,7 +113,7 @@ button:hover {
     color: black;
 }
 
-button:hover span {transform: translateY(0) scale(2);}
+button:hover span {transform: translateY(-60%) scale(1);}
 
 button span:nth-child(1) {--n: 1;}
 button span:nth-child(2) {--n: 4;}
@@ -128,7 +128,7 @@ button span:nth-child(4) {--n: 2;}
 }
 #Formation{margin-top:45%;margin-left:30%;}
 #Competences{margin-top:100%;margin-left:30%;} 
-#Projets{margin-top:150%;margin-left:30%;} 
+#Projets{margin-top:150%;margin-left:02%;font-size:5.4vw ;} 
 #Hobbies{margin-top:195%;margin-left:30%;} 
 
 #c{margin-top:22%;margin-left:42%;}
@@ -212,9 +212,9 @@ background-clip: text;
 
 .hex {--c: #0F0F0F;float: left;position:absolute; display:inline-block;  
 }
-.hex .top {width: 0;border-bottom: 2.08vw solid var(--c);border-left: 4.16vw solid transparent;border-right: 4.16vw solid transparent;}
-.hex .middle {width: 8.27vw;height: 5.15vw;background: var(--c);}
-.hex .bottom {width: 0;border-top: 2.08vw solid var(--c);border-left: 4.16vw solid transparent;border-right: 4.16vw solid transparent;}
+.hex .top {width: 0;border-bottom: 2.15vw solid var(--c);border-left: 4.3vw solid transparent;border-right: 4.16vw solid transparent;}
+.hex .middle {width: 8.3vw;height: 5.15vw;background: var(--c);}
+.hex .bottom {width: 0;border-top: 2.15vw solid var(--c);border-left: 4.3vw solid transparent;border-right: 4.16vw solid transparent;}
 .hex:hover {
   --c:  #2F1F2F;
 }
@@ -878,21 +878,21 @@ background-clip: text;
 
 
     <div id="a">
-        <button id="header"> Formation
+        <button id="header">.<br>Formation<br>.
         <span></span><span></span><span></span><span></span>
         </button>
-        <button id="header2">Competences
+        <button id="header2">.<br>Competences<br>.
         <span></span><span></span><span></span><span></span></button>
-        <button id="header3">Projets
+        <button id="header3">Projets <br> Expérience pro
         <span></span><span></span><span></span><span></span></button>
-        <button id="header4">Hobbies
+        <button id="header4">.<br>Hobbies<br>.
         <span></span><span></span><span></span><span></span></button>
 </div>
 
 <div class="grandTitre" id="b"        >Tom Malherbe</div>
 <div class="grandTitre" id="Formation">Formation</div>
 <div class="grandTitre" id="Competences">Competences</div>
-<div class="grandTitre" id="Projets">Projets</div>
+<div class="grandTitre" id="Projets">Projets et expérience professionnelle</div>
 <div class="grandTitre" id="Hobbies">Hobbies</div>
 
 <div class="texte" id="c"             >élève-ingénieur en systèmes numériques<br>tomalherb@enssat.fr<br>+33 6 52 95 04 01<br>Chateau 48260<br>Marchastel, France</div>
@@ -919,14 +919,14 @@ background-clip: text;
 <div class="texte" id="Stage">   Stage : Implémentation et validation du processeur RISC-V Comet  <br>sur plateforme FPGA  ( Inria, équipe Cairn, 7 semaines )
 <br>
 <br>
- Etude de la compatibilité électromagnétique de 2 réseaux LTE FDD  deployés <br>
+Projet : Etude de la compatibilité électromagnétique de 2 réseaux LTE FDD  <br> deployés
  l'un à coté de l'autre utilisant les mêmes fréquences et technologies<br>
 <br>
 
-Prix des Côtes-d'Armor obtenu lors du concours les  Entrep’  <br>(concours de création d’entreprise en équipe)  avec le projet MeeP’lace
+Projet : Prix des Côtes-d'Armor obtenu lors du concours les  Entrep’  <br>(concours de création d’entreprise en équipe)  avec le projet MeeP’lace
 <br>
 <br>
- Identification biométrique et recherche de maladie par  phonocardiogramme <br> à l’aide d’un DSP (Digital Signal  Processor)
+ Projet : Identification biométrique et recherche de maladie par  phonocardiogramme <br> à l’aide d’un DSP (Digital Signal  Processor)
 <br>
 <br>
 
