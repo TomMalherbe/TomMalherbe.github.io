@@ -12,11 +12,8 @@ body {
 overflow-x:hidden;    
   vertical-align: middle;
   min-height: 100vh;
-background: rgb(99,99,101);
-background: linear-gradient(90deg, rgba(99,99,101,1) 0%, rgba(106,99,87,1) 45%, rgba(131,120,92,1) 75%, rgba(218,165,32,1) 100%);
-}
-
-
+background: rgb(96,92,88);
+background: linear-gradient(90deg, rgba(96,92,88,1) 0%, rgba(104,92,77,1) 20%, rgba(109,97,75,1) 45%, rgba(131,110,75,1) 70%, rgba(199,143,7,1) 100%);
 #Tom {
   border-radius: 50%;
   position: fixed;
@@ -187,9 +184,16 @@ z-index:-1;
 
 
 #lecube1{margin-top:160%;margin-left:0.5%;border: 0.2vw solid black;position:absolute;border-radius: 4vw;height: 6vw;width:86vw;overflow: hidden;z-index: 4;transition: 0.5s;}
+#lecube1fond{margin-top:160%;margin-left:0.5%;border: 0.2vw solid black;position:absolute;border-radius: 4vw;height: 6vw;width:86vw;overflow: hidden;z-index: 0;transition: 0.5s;}
+
 #lecube2{margin-top:169%;margin-left:0.5%;border: 0.2vw solid black;border-radius: 4vw;width: 86vw ;height: 6vw;overflow: hidden;z-index: 4;transition: 0.5s;position:absolute;}
+#lecube2fond{margin-top:169%;margin-left:0.5%;border: 0.2vw solid black;position:absolute;border-radius: 4vw;height: 6vw;width:86vw;overflow: hidden;z-index: 0;transition: 0.5s;}
+
 #lecube3{margin-top:178%;margin-left:0.5%;border: 0.2vw solid black;border-radius: 4vw;width: 86vw ;height: 6vw;overflow: hidden;z-index: 4;transition: 0.5s;position:absolute;}
+#lecube3fond{margin-top:178%;margin-left:0.5%;border: 0.2vw solid black;border-radius: 4vw;width: 86vw ;height: 6vw;overflow: hidden;z-index: 0;transition: 0.5s;position:absolute;}
+
 #lecube4{margin-top:187%;margin-left:0.5%;border: 0.2vw solid black;border-radius: 4vw;width: 86vw ;height: 6vw;overflow: hidden;z-index: 4;transition: 0.5s;position:absolute;}
+#lecube4fond{margin-top:187%;margin-left:0.5%;border: 0.2vw solid black;border-radius: 4vw;width: 86vw ;height: 6vw;overflow: hidden;z-index: 0;transition: 0.5s;position:absolute;}
 
 #Hobbis{
   margin-top:207%;
@@ -933,6 +937,11 @@ Projet : Prix des Côtes-d'Armor obtenu lors du concours les  Entrep’  <br>(co
 
 </Program></div> 
 <div classe="cue" id="lecube1"></div>
+<div classe="cue" id="lecube1fond"></div>
+<div classe="cue" id="lecube2fond"></div>
+<div classe="cue" id="lecube3fond"></div>
+<div classe="cue" id="lecube4fond"></div>
+
 <div classe="cue" id="lecube2"></div>
 <div classe="cue" id="lecube3"></div>
 <div classe="cue" id="lecube4"></div>
@@ -1032,19 +1041,18 @@ document.getElementById("Hobbis").style.backgroundPosition="0";
 
 
 
-document.getElementById("lecube1").onmouseover=function(){this.style.borderColor  = "white";this.style.backgroundColor  = "black";this.style.zIndex="-1"};
-document.getElementById("lecube1").onmouseout=function(){this.style.borderColor  = "Black";this.style.backgroundColor  = "transparent";this.style.zIndex="10"
+document.getElementById("lecube1").onmouseover=function(){this.style.borderColor  = "white";document.getElementById("lecube1fond").style.backgroundColor = "#222222";};
+document.getElementById("lecube1").onmouseout=function(){this.style.borderColor  = "Black";document.getElementById("lecube1fond").style.backgroundColor = "transparent";
 };
-document.getElementById("lecube2").onmouseover=function(){this.style.borderColor  = "white";};
-document.getElementById("lecube2").onmouseout=function(){this.style.borderColor  = "black";
+document.getElementById("lecube2").onmouseover=function(){this.style.borderColor  = "white";document.getElementById("lecube2fond").style.backgroundColor = "#222222";};
+document.getElementById("lecube2").onmouseout=function(){this.style.borderColor  = "Black";document.getElementById("lecube2fond").style.backgroundColor = "transparent";
 };
-document.getElementById("lecube3").onmouseover=function(){this.style.borderColor  = "white";};
-document.getElementById("lecube3").onmouseout=function(){this.style.borderColor  = "black";
+document.getElementById("lecube3").onmouseover=function(){this.style.borderColor  = "white";document.getElementById("lecube3fond").style.backgroundColor = "#222222";};
+document.getElementById("lecube3").onmouseout=function(){this.style.borderColor  = "Black";document.getElementById("lecube3fond").style.backgroundColor = "transparent";
 };
-document.getElementById("lecube4").onmouseover=function(){this.style.borderColor  = "white";};
-document.getElementById("lecube4").onmouseout=function(){this.style.borderColor  = "black";
+document.getElementById("lecube4").onmouseover=function(){this.style.borderColor  = "white";document.getElementById("lecube4fond").style.backgroundColor = "#222222";};
+document.getElementById("lecube4").onmouseout=function(){this.style.borderColor  = "Black";document.getElementById("lecube4fond").style.backgroundColor = "transparent";
 };
-
 
 
 
