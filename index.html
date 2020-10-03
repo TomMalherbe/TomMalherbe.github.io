@@ -3,13 +3,19 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+
 body { 
   margin: 0;
+  width:auto;
+  height:auto;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: black ! important;
-  display: flex;
-  background-color: black;
+overflow-x:hidden;    
+  vertical-align: middle;
+  min-height: 100vh;
+background: rgb(147,254,255);
+background: linear-gradient(-90deg, rgba(147,254,255,1) 0%, rgba(74,14,131,1) 100%);
 }
+
 
 #Tom {
   border-radius: 50%;
@@ -18,7 +24,7 @@ body {
   width:32%;
   height:auto;
   transition: 0.2s;
-  z-index: 26;
+  z-index: 6;
   margin-top : 15%;
   margin-left : 10%;
 
@@ -32,6 +38,17 @@ body {
   z-index: 6;
   margin-top : 205%;
   margin-left : 45%;
+}
+#Truc{
+  
+  position: absolute;
+ 
+  width:100%;
+  height:auto;
+  transition: 0.2s;
+  z-index: -10;
+  margin-top : 0%;
+  margin-left : 0%;
 
 }
 #a {
@@ -174,7 +191,12 @@ z-index:-1;
 #lecube3{margin-top:178%;margin-left:0.5%;border: 0.2vw solid black;border-radius: 4vw;width: 86vw ;height: 6vw;overflow: hidden;z-index: 4;transition: 0.5s;position:absolute;}
 #lecube4{margin-top:187%;margin-left:0.5%;border: 0.2vw solid black;border-radius: 4vw;width: 86vw ;height: 6vw;overflow: hidden;z-index: 4;transition: 0.5s;position:absolute;}
 
-#Hobbis{margin-top:207%;margin-left:2%;font-size:4vw;line-height: 3.5vw;z-index:14
+#Hobbis{
+  margin-top:207%;
+margin-left:2%;
+font-size:4vw;
+line-height: 3.5vw;
+z-index:14;
   overflow: hidden;
   background: linear-gradient(to right, white , white 50%, goldenrod 50%);
 background-clip: text;
@@ -185,24 +207,675 @@ background-clip: text;
   transition-delay:1s;
   z-index: 14;
 }
-#lecube5{margin-top:201%;
-margin-left:40%;
-border-radius: 30% ;
 
-background: black;
-width: 40vw ;
-height: 40vw;
-overflow: hidden;
-z-index: 10;
-transition: 5s;
-position:absolute;}
 
+
+.hex {--c: #0F0F0F;float: left;position:absolute; display:inline-block;  
 }
+.hex .top {width: 0;border-bottom: 2.08vw solid var(--c);border-left: 4.16vw solid transparent;border-right: 4.16vw solid transparent;}
+.hex .middle {width: 8.27vw;height: 5.15vw;background: var(--c);}
+.hex .bottom {width: 0;border-top: 2.08vw solid var(--c);border-left: 4.16vw solid transparent;border-right: 4.16vw solid transparent;}
+.hex:hover {
+  --c:  #2F1F2F;
+}
+
+#Hex1{margin-left: 0%;margin-top: 5%;}
+#Hex2{margin-left: 0%;margin-top: 20%;}
+#Hex3{margin-left: 4.2%;margin-top: 12.5%;}
+#Hex4{margin-left: -4.2%;margin-top: 12.5%;}
+#Hex5{margin-left: 8.4%;margin-top: 5%;}
+#Hex6{margin-left: 8.4%;margin-top: 20%;}
+#Hex7{margin-left: 12.6%;margin-top: 12.5%;}
+#Hex8{margin-left: 16.8%;margin-top: 5%;}
+#Hex9{margin-left: 16.8%;margin-top: 20%;}
+#Hex10{margin-left: 21%;margin-top: 12.5%;}
+#Hex11{margin-left: 25.2%;margin-top: 5%;}
+#Hex12{margin-left: 25.2%;margin-top: 20%;}
+#Hex13{margin-left: 29.4%;margin-top: 12.5%;}
+#Hex14{margin-left: 33.6%;margin-top: 5%;}
+#Hex15{margin-left: 33.6%;margin-top: 20%;}
+#Hex16{margin-left: 37.8%;margin-top: 12.5%;}
+#Hex17{margin-left: 42%;margin-top: 5%;}
+#Hex18{margin-left: 42%;margin-top: 20%;}
+#Hex19{margin-left: 46.2%;margin-top: 12.5%;}
+#Hex20{margin-left: 50.4%;margin-top: 5%;}
+#Hex21{margin-left: 50.4%;margin-top: 20%;}
+#Hex22{margin-left: 54.6%;margin-top: 12.5%;}
+#Hex23{margin-left: 58.8%;margin-top: 5%;}
+#Hex24{margin-left: 58.8%;margin-top: 20%;}
+#Hex25{margin-left: 63%;margin-top: 12.5%;}
+#Hex26{margin-left: 67.2%;margin-top: 5%;}
+#Hex27{margin-left: 67.2%;margin-top: 20%;}
+#Hex28{margin-left: 71.4%;margin-top: 12.5%;}
+#Hex29{margin-left: 75.6%;margin-top: 5%;}
+#Hex30{margin-left: 75.6%;margin-top: 20%;}
+#Hex31{margin-left: 79.8%;margin-top: 12.5%;}
+#Hex32{margin-left: 84%;margin-top: 5%;}
+#Hex33{margin-left: 84%;margin-top: 20%;}
+#Hex34{margin-left: 88.2%;margin-top: 12.5%;}
+#Hex35{margin-left: 92.4%;margin-top: 5%;}
+#Hex36{margin-left: 92.4%;margin-top: 20%;}
+#Hex37{margin-left: 96.6%;margin-top: 12.5%;}
+
+
+#Hex-1{margin-left: 0%;margin-top: 35%;}#Hex-2{margin-left: 4.2%;margin-top: 27.5%;}#Hex-3{margin-left: -4.2%;margin-top: 27.5%;}
+#Hex-4{margin-left: 8.4%;margin-top: 35%;}#Hex-5{margin-left: 12.6%;margin-top: 27.5%;}#Hex-6{margin-left: 16.8%;margin-top: 35%;}#Hex-7{margin-left: 21%;margin-top: 27.5%;}
+#Hex-8{margin-left: 25.2%;margin-top: 35%;}#Hex-9{margin-left: 29.4%;margin-top: 27.5%;}#Hex-10{margin-left: 33.6%;margin-top: 35%;}#Hex-11{margin-left: 37.8%;margin-top: 27.5%;}
+#Hex-12{margin-left: 42%;margin-top: 35%;}#Hex-13{margin-left: 46.2%;margin-top: 27.5%;}#Hex-14{margin-left: 50.4%;margin-top: 35%;}#Hex-15{margin-left: 54.6%;margin-top: 27.5%;}
+#Hex-16{margin-left: 58.8%;margin-top: 35%;}#Hex-17{margin-left: 63%;margin-top: 27.5%;}#Hex-18{margin-left: 67.2%;margin-top: 35%;}#Hex-19{margin-left: 71.4%;margin-top: 27.5%;}
+#Hex-20{margin-left: 75.6%;margin-top: 35%;}#Hex-21{margin-left: 79.8%;margin-top: 27.5%;}#Hex-22{margin-left: 84%;margin-top: 35%;}#Hex-23{margin-left: 88.2%;margin-top: 27.5%;}
+#Hex-24{margin-left: 92.4%;margin-top: 35%;}#Hex-25{margin-left: 96.6%;margin-top: 27.5%;}#Hex-26{margin-left: 0%;margin-top: 50%;}#Hex-27{margin-left: 4.2%;margin-top: 42.5%;}
+#Hex-28{margin-left: -4.2%;margin-top: 42.5%;}#Hex-29{margin-left: 8.4%;margin-top: 50%;}#Hex-30{margin-left: 12.6%;margin-top: 42.5%;}#Hex-31{margin-left: 16.8%;margin-top: 50%;}
+#Hex-32{margin-left: 21%;margin-top: 42.5%;}#Hex-33{margin-left: 25.2%;margin-top: 50%;}#Hex-34{margin-left: 29.4%;margin-top: 42.5%;}#Hex-35{margin-left: 33.6%;margin-top: 50%;}
+#Hex-36{margin-left: 37.8%;margin-top: 42.5%;}#Hex-37{margin-left: 42%;margin-top: 50%;}#Hex-38{margin-left: 46.2%;margin-top: 42.5%;}#Hex-39{margin-left: 50.4%;margin-top: 50%;}
+#Hex-40{margin-left: 54.6%;margin-top: 42.5%;}#Hex-41{margin-left: 58.8%;margin-top: 50%;}#Hex-42{margin-left: 63%;margin-top: 42.5%;}#Hex-43{margin-left: 67.2%;margin-top: 50%;}
+#Hex-44{margin-left: 71.4%;margin-top: 42.5%;}#Hex-45{margin-left: 75.6%;margin-top: 50%;}#Hex-46{margin-left: 79.8%;margin-top: 42.5%;}#Hex-47{margin-left: 84%;margin-top: 50%;}
+#Hex-48{margin-left: 88.2%;margin-top: 42.5%;}#Hex-49{margin-left: 92.4%;margin-top: 50%;}#Hex-50{margin-left: 96.6%;margin-top: 42.5%;}
+
+#Hex-01{margin-left: 0%;margin-top: 65%;}#Hex-02{margin-left: 4.2%;margin-top: 57.5%;}#Hex-03{margin-left: -4.2%;margin-top: 57.5%;}#Hex-04{margin-left: 8.4%;margin-top: 65%;}
+#Hex-05{margin-left: 12.6%;margin-top: 57.5%;}#Hex-06{margin-left: 16.8%;margin-top: 65%;}#Hex-07{margin-left: 21%;margin-top: 57.5%;}#Hex-08{margin-left: 25.2%;margin-top: 65%;}#Hex-09{margin-left: 29.4%;margin-top: 57.5%;}#Hex-010{margin-left: 33.6%;margin-top: 65%;}
+#Hex-011{margin-left: 37.8%;margin-top: 57.5%;}#Hex-012{margin-left: 42%;margin-top: 65%;}#Hex-013{margin-left: 46.2%;margin-top: 57.5%;}#Hex-014{margin-left: 50.4%;margin-top: 65%;}#Hex-015{margin-left: 54.6%;margin-top: 57.5%;}#Hex-016{margin-left: 58.8%;margin-top: 65%;}
+#Hex-017{margin-left: 63%;margin-top: 57.5%;}#Hex-018{margin-left: 67.2%;margin-top: 65%;}#Hex-019{margin-left: 71.4%;margin-top: 57.5%;}#Hex-020{margin-left: 75.6%;margin-top: 65%;}
+#Hex-021{margin-left: 79.8%;margin-top: 57.5%;}#Hex-022{margin-left: 84%;margin-top: 65%;}#Hex-023{margin-left: 88.2%;margin-top: 57.5%;}#Hex-024{margin-left: 92.4%;margin-top: 65%;}#Hex-025{margin-left: 96.6%;margin-top: 57.5%;}#Hex-026{margin-left: 0%;margin-top: 80%;}#Hex-027{margin-left: 4.2%;margin-top: 72.5%;}#Hex-028{margin-left: -4.2%;margin-top: 72.5%;}
+#Hex-029{margin-left: 8.4%;margin-top: 80%;}#Hex-030{margin-left: 12.6%;margin-top: 72.5%;}#Hex-031{margin-left: 16.8%;margin-top: 80%;}#Hex-032{margin-left: 21%;margin-top: 72.5%;}#Hex-033{margin-left: 25.2%;margin-top: 80%;}
+#Hex-034{margin-left: 29.4%;margin-top: 72.5%;}#Hex-035{margin-left: 33.6%;margin-top: 80%;}#Hex-036{margin-left: 37.8%;margin-top: 72.5%;}#Hex-037{margin-left: 42%;margin-top: 80%;}#Hex-038{margin-left: 46.2%;margin-top: 72.5%;}#Hex-039{margin-left: 50.4%;margin-top: 80%;}
+#Hex-040{margin-left: 54.6%;margin-top: 72.5%;}#Hex-041{margin-left: 58.8%;margin-top: 80%;}#Hex-042{margin-left: 63%;margin-top: 72.5%;}#Hex-043{margin-left: 67.2%;margin-top: 80%;}#Hex-044{margin-left: 71.4%;margin-top: 72.5%;}#Hex-045{margin-left: 75.6%;margin-top: 80%;}
+#Hex-046{margin-left: 79.8%;margin-top: 72.5%;}#Hex-047{margin-left: 84%;margin-top: 80%;}#Hex-048{margin-left: 88.2%;margin-top: 72.5%;}#Hex-049{margin-left: 92.4%;margin-top: 80%;}#Hex-050{margin-left: 96.6%;margin-top: 72.5%;}
+
+#Hexa-1{margin-left: 0%;margin-top: 95%;}
+#Hexa-2{margin-left: 4.2%;margin-top: 87.5%;}
+#Hexa-3{margin-left: -4.2%;margin-top: 87.5%;}
+#Hexa-4{margin-left: 8.4%;margin-top: 95%;}
+#Hexa-5{margin-left: 12.6%;margin-top: 87.5%;}
+#Hexa-6{margin-left: 16.8%;margin-top: 95%;}
+#Hexa-7{margin-left: 21%;margin-top: 87.5%;}
+#Hexa-8{margin-left: 25.2%;margin-top: 95%;}
+#Hexa-9{margin-left: 29.4%;margin-top: 87.5%;}
+#Hexa-10{margin-left: 33.6%;margin-top: 95%;}
+#Hexa-11{margin-left: 37.8%;margin-top: 87.5%;}
+#Hexa-12{margin-left: 42%;margin-top: 95%;}
+#Hexa-13{margin-left: 46.2%;margin-top: 87.5%;}
+#Hexa-14{margin-left: 50.4%;margin-top: 95%;}
+#Hexa-15{margin-left: 54.6%;margin-top: 87.5%;}
+#Hexa-16{margin-left: 58.8%;margin-top: 95%;}
+#Hexa-17{margin-left: 63%;margin-top: 87.5%;}
+#Hexa-18{margin-left: 67.2%;margin-top: 95%;}
+#Hexa-19{margin-left: 71.4%;margin-top: 87.5%;}
+#Hexa-20{margin-left: 75.6%;margin-top: 95%;}
+#Hexa-21{margin-left: 79.8%;margin-top: 87.5%;}
+#Hexa-22{margin-left: 84%;margin-top: 95%;}
+#Hexa-23{margin-left: 88.2%;margin-top: 87.5%;}
+#Hexa-24{margin-left: 92.4%;margin-top: 95%;}
+#Hexa-25{margin-left: 96.6%;margin-top: 87.5%;}
+
+#Hexa-26{margin-left: 0%;margin-top: 110%;}
+#Hexa-27{margin-left: 4.2%;margin-top: 102.5%;}
+#Hexa-28{margin-left: -4.2%;margin-top: 102.5%;}
+#Hexa-29{margin-left: 8.4%;margin-top: 110%;}
+#Hexa-30{margin-left: 12.6%;margin-top: 102.5%;}
+#Hexa-31{margin-left: 16.8%;margin-top: 110%;}
+#Hexa-32{margin-left: 21%;margin-top: 102.5%;}
+#Hexa-33{margin-left: 25.2%;margin-top: 110%;}
+#Hexa-34{margin-left: 29.4%;margin-top: 102.5%;}
+#Hexa-35{margin-left: 33.6%;margin-top: 110%;}
+#Hexa-36{margin-left: 37.8%;margin-top: 102.5%;}
+#Hexa-37{margin-left: 42%;margin-top: 110%;}
+#Hexa-38{margin-left: 46.2%;margin-top: 102.5%;}
+#Hexa-39{margin-left: 50.4%;margin-top: 110%;}
+#Hexa-40{margin-left: 54.6%;margin-top: 102.5%;}
+#Hexa-41{margin-left: 58.8%;margin-top: 110%;}
+#Hexa-42{margin-left: 63%;margin-top: 102.5%;}
+#Hexa-43{margin-left: 67.2%;margin-top: 110%;}
+#Hexa-44{margin-left: 71.4%;margin-top: 102.5%;}
+#Hexa-45{margin-left: 75.6%;margin-top: 110%;}
+#Hexa-46{margin-left: 79.8%;margin-top: 102.5%;}
+#Hexa-47{margin-left: 84%;margin-top: 110%;}
+#Hexa-48{margin-left: 88.2%;margin-top: 102.5%;}
+#Hexa-49{margin-left: 92.4%;margin-top: 110%;}
+#Hexa-50{margin-left: 96.6%;margin-top: 102.5%;}
+
+
+#Hexa-01{margin-left: 0%;margin-top: 125%;}
+#Hexa-02{margin-left: 4.2%;margin-top: 117.5%;}
+#Hexa-03{margin-left: -4.2%;margin-top: 117.5%;}
+#Hexa-04{margin-left: 8.4%;margin-top: 125%;}
+#Hexa-05{margin-left: 12.6%;margin-top: 117.5%;}
+#Hexa-06{margin-left: 16.8%;margin-top: 125%;}
+#Hexa-07{margin-left: 21%;margin-top: 117.5%;}
+#Hexa-08{margin-left: 25.2%;margin-top: 125%;}
+#Hexa-09{margin-left: 29.4%;margin-top: 117.5%;}
+#Hexa-010{margin-left: 33.6%;margin-top: 125%;}
+#Hexa-011{margin-left: 37.8%;margin-top: 117.5%;}
+#Hexa-012{margin-left: 42%;margin-top: 125%;}
+#Hexa-013{margin-left: 46.2%;margin-top: 117.5%;}
+#Hexa-014{margin-left: 50.4%;margin-top: 125%;}
+#Hexa-015{margin-left: 54.6%;margin-top: 117.5%;}
+#Hexa-016{margin-left: 58.8%;margin-top: 125%;}
+#Hexa-017{margin-left: 63%;margin-top: 117.5%;}
+#Hexa-018{margin-left: 67.2%;margin-top: 125%;}
+#Hexa-019{margin-left: 71.4%;margin-top: 117.5%;}
+#Hexa-020{margin-left: 75.6%;margin-top: 125%;}
+#Hexa-021{margin-left: 79.8%;margin-top: 117.5%;}
+#Hexa-022{margin-left: 84%;margin-top: 125%;}
+#Hexa-023{margin-left: 88.2%;margin-top: 117.5%;}
+#Hexa-024{margin-left: 92.4%;margin-top: 125%;}
+#Hexa-025{margin-left: 96.6%;margin-top: 117.5%;}
+#Hexa-026{margin-left: 0%;margin-top: 140%;}
+#Hexa-027{margin-left: 4.2%;margin-top: 132.5%;}
+#Hexa-028{margin-left: -4.2%;margin-top: 132.55%;}
+#Hexa-029{margin-left: 8.4%;margin-top: 140%;}
+#Hexa-030{margin-left: 12.6%;margin-top: 132.5%;}
+#Hexa-031{margin-left: 16.8%;margin-top: 140%;}
+#Hexa-032{margin-left: 21%;margin-top: 132.5%;}
+#Hexa-033{margin-left: 25.2%;margin-top: 140%;}
+#Hexa-034{margin-left: 29.4%;margin-top: 132.5%;}
+#Hexa-035{margin-left: 33.6%;margin-top: 140%;}
+#Hexa-036{margin-left: 37.8%;margin-top: 132.5%;}
+#Hexa-037{margin-left: 42%;margin-top: 140%;}
+#Hexa-038{margin-left: 46.2%;margin-top: 132.5%;}
+#Hexa-039{margin-left: 50.4%;margin-top: 140%;}
+#Hexa-040{margin-left: 54.6%;margin-top: 132.5%;}
+#Hexa-041{margin-left: 58.8%;margin-top: 140%;}
+#Hexa-042{margin-left: 63%;margin-top: 132.5%;}
+#Hexa-043{margin-left: 67.2%;margin-top: 140%;}
+#Hexa-044{margin-left: 71.4%;margin-top: 132.5%;}
+#Hexa-045{margin-left: 75.6%;margin-top: 140%;}
+#Hexa-046{margin-left: 79.8%;margin-top: 132.5%;}
+#Hexa-047{margin-left: 84%;margin-top: 140%;}
+#Hexa-048{margin-left: 88.2%;margin-top: 132.5%;}
+#Hexa-049{margin-left: 92.4%;margin-top: 140%;}
+#Hexa-050{margin-left: 96.6%;margin-top: 132.5%;}
+
+
+#Hexaa-1{margin-left: 0%;margin-top: 155%;}
+#Hexaa-2{margin-left: 4.2%;margin-top: 147.5%;}
+#Hexaa-3{margin-left: -4.2%;margin-top: 147.5%;}
+#Hexaa-4{margin-left: 8.4%;margin-top: 155%;}
+#Hexaa-5{margin-left: 12.6%;margin-top: 147.5%;}
+#Hexaa-6{margin-left: 16.8%;margin-top: 155%;}
+#Hexaa-7{margin-left: 21%;margin-top: 147.5%;}
+#Hexaa-8{margin-left: 25.2%;margin-top: 155%;}
+#Hexaa-9{margin-left: 29.4%;margin-top: 147.5%;}
+#Hexaa-10{margin-left: 33.6%;margin-top: 155%;}
+#Hexaa-11{margin-left: 37.8%;margin-top: 147.5%;}
+#Hexaa-12{margin-left: 42%;margin-top: 155%;}
+#Hexaa-13{margin-left: 46.2%;margin-top: 147.5%;}
+#Hexaa-14{margin-left: 50.4%;margin-top: 155%;}
+#Hexaa-15{margin-left: 54.6%;margin-top: 147.5%;}
+#Hexaa-16{margin-left: 58.8%;margin-top: 155%;}
+#Hexaa-17{margin-left: 63%;margin-top: 147.5%;}
+#Hexaa-18{margin-left: 67.2%;margin-top: 155%;}
+#Hexaa-19{margin-left: 71.4%;margin-top: 147.5%;}
+#Hexaa-20{margin-left: 75.6%;margin-top: 155%;}
+#Hexaa-21{margin-left: 79.8%;margin-top: 147.5%;}
+#Hexaa-22{margin-left: 84%;margin-top: 155%;}
+#Hexaa-23{margin-left: 88.2%;margin-top: 147.5%;}
+#Hexaa-24{margin-left: 92.4%;margin-top: 155%;}
+#Hexaa-25{margin-left: 96.6%;margin-top: 147.5%;}
+
+#Hexaa-26{margin-left: 0%;margin-top: 170%;}
+#Hexaa-27{margin-left: 4.2%;margin-top: 162.5%;}
+#Hexaa-28{margin-left: -4.2%;margin-top: 162.5%;}
+#Hexaa-29{margin-left: 8.4%;margin-top: 170%;}
+#Hexaa-30{margin-left: 12.6%;margin-top: 162.5%;}
+#Hexaa-31{margin-left: 16.8%;margin-top: 170%;}
+#Hexaa-32{margin-left: 21%;margin-top: 162.5%;}
+#Hexaa-33{margin-left: 25.2%;margin-top: 170%;}
+#Hexaa-34{margin-left: 29.4%;margin-top: 162.5%;}
+#Hexaa-35{margin-left: 33.6%;margin-top: 170%;}
+#Hexaa-36{margin-left: 37.8%;margin-top: 162.5%;}
+#Hexaa-37{margin-left: 42%;margin-top: 170%;}
+#Hexaa-38{margin-left: 46.2%;margin-top: 162.5%;}
+#Hexaa-39{margin-left: 50.4%;margin-top: 170%;}
+#Hexaa-40{margin-left: 54.6%;margin-top: 162.5%;}
+#Hexaa-41{margin-left: 58.8%;margin-top: 170%;}
+#Hexaa-42{margin-left: 63%;margin-top: 162.5%;}
+#Hexaa-43{margin-left: 67.2%;margin-top: 170%;}
+#Hexaa-44{margin-left: 71.4%;margin-top: 162.5%;}
+#Hexaa-45{margin-left: 75.6%;margin-top: 170%;}
+#Hexaa-46{margin-left: 79.8%;margin-top: 162.5%;}
+#Hexaa-47{margin-left: 84%;margin-top: 170%;}
+#Hexaa-48{margin-left: 88.2%;margin-top: 162.5%;}
+#Hexaa-49{margin-left: 92.4%;margin-top: 170%;}
+#Hexaa-50{margin-left: 96.6%;margin-top: 162.5%;}
+
+
+#Hexaa-01{margin-left: 0%;margin-top: 185%;}
+#Hexaa-02{margin-left: 4.2%;margin-top: 177.5%;}
+#Hexaa-03{margin-left: -4.2%;margin-top: 177.5%;}
+#Hexaa-04{margin-left: 8.4%;margin-top: 185%;}
+#Hexaa-05{margin-left: 12.6%;margin-top: 177.5%;}
+#Hexaa-06{margin-left: 16.8%;margin-top: 185%;}
+#Hexaa-07{margin-left: 21%;margin-top: 177.5%;}
+#Hexaa-08{margin-left: 25.2%;margin-top: 185%;}
+#Hexaa-09{margin-left: 29.4%;margin-top: 177.5%;}
+#Hexaa-010{margin-left: 33.6%;margin-top: 185%;}
+#Hexaa-011{margin-left: 37.8%;margin-top: 177.5%;}
+#Hexaa-012{margin-left: 42%;margin-top: 185%;}
+#Hexaa-013{margin-left: 46.2%;margin-top: 177.5%;}
+#Hexaa-014{margin-left: 50.4%;margin-top: 185%;}
+#Hexaa-015{margin-left: 54.6%;margin-top: 177.5%;}
+#Hexaa-016{margin-left: 58.8%;margin-top: 185%;}
+#Hexaa-017{margin-left: 63%;margin-top: 177.5%;}
+#Hexaa-018{margin-left: 67.2%;margin-top: 185%;}
+#Hexaa-019{margin-left: 71.4%;margin-top: 177.5%;}
+#Hexaa-020{margin-left: 75.6%;margin-top: 185%;}
+#Hexaa-021{margin-left: 79.8%;margin-top: 177.5%;}
+#Hexaa-022{margin-left: 84%;margin-top: 185%;}
+#Hexaa-023{margin-left: 88.2%;margin-top: 177.5%;}
+#Hexaa-024{margin-left: 92.4%;margin-top: 185%;}
+#Hexaa-025{margin-left: 96.6%;margin-top: 177.5%;}
+#Hexaa-026{margin-left: 0%;margin-top: 200%;}
+#Hexaa-027{margin-left: 4.2%;margin-top: 192.5%;}
+#Hexaa-028{margin-left: -4.2%;margin-top: 192.55%;}
+#Hexaa-029{margin-left: 8.4%;margin-top: 200%;}
+#Hexaa-030{margin-left: 12.6%;margin-top: 192.5%;}
+#Hexaa-031{margin-left: 16.8%;margin-top: 200%;}
+#Hexaa-032{margin-left: 21%;margin-top: 192.5%;}
+#Hexaa-033{margin-left: 25.2%;margin-top: 200%;}
+#Hexaa-034{margin-left: 29.4%;margin-top: 192.5%;}
+#Hexaa-035{margin-left: 33.6%;margin-top: 200%;}
+#Hexaa-036{margin-left: 37.8%;margin-top: 192.5%;}
+#Hexaa-037{margin-left: 42%;margin-top: 200%;}
+#Hexaa-038{margin-left: 46.2%;margin-top: 192.5%;}
+#Hexaa-039{margin-left: 50.4%;margin-top: 200%;}
+#Hexaa-040{margin-left: 54.6%;margin-top: 192.5%;}
+#Hexaa-041{margin-left: 58.8%;margin-top: 200%;}
+#Hexaa-042{margin-left: 63%;margin-top: 192.5%;}
+#Hexaa-043{margin-left: 67.2%;margin-top: 200%;}
+#Hexaa-044{margin-left: 71.4%;margin-top: 192.5%;}
+#Hexaa-045{margin-left: 75.6%;margin-top: 200%;}
+#Hexaa-046{margin-left: 79.8%;margin-top: 192.5%;}
+#Hexaa-047{margin-left: 84%;margin-top: 200%;}
+#Hexaa-048{margin-left: 88.2%;margin-top: 192.5%;}
+#Hexaa-049{margin-left: 92.4%;margin-top: 200%;}
+#Hexaa-050{margin-left: 96.6%;margin-top: 192.5%;}
+
+#Hexaa-051{margin-left: 0%;margin-top: 215%;}
+#Hexaa-052{margin-left: 4.2%;margin-top: 207.5%;}
+#Hexaa-053{margin-left: -4.2%;margin-top: 207.5%;}
+#Hexaa-054{margin-left: 8.4%;margin-top: 215%;}
+#Hexaa-055{margin-left: 12.6%;margin-top: 207.5%;}
+#Hexaa-056{margin-left: 16.8%;margin-top: 215%;}
+#Hexaa-057{margin-left: 33.6%;margin-top: 215%;}
+#Hexaa-058{margin-left: 37.8%;margin-top: 207.5%;}
+#Hexaa-059{margin-left: 50.4%;margin-top: 215%;}
+#Hexaa-060{margin-left: 46.2%;margin-top: 207.5%;}
+#Hexaa-061{margin-left: 29.4%;margin-top: 207.5%;}
+#Hexaa-062{margin-left: 29.4%;margin-top: 222.5%;}
+#Hexaa-063{margin-left: 71.4%;margin-top: 207.5%;}
+#Hexaa-064{margin-left: 79.8%;margin-top: 207.5%;}
+#Hexaa-065{margin-left: 75.6%;margin-top: 215%;}
+#Hexaa-066{margin-left: 71.4%;margin-top: 207.5%;}
+
 </style>
 </head>
 <body>
   <img id="Tom" src="TomMalherbe.png"></img>
   <img id="Hobbb" src="Hobbb.png"></img>
+  <div class="hex" onmouseover="Anim(this)" id="Hex1"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hex2"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex3"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex4"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex5"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hex6"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex7"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex8"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex9"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex10"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex11"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+    <div class="hex" id="Hex12"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex13"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+    <div class="hex" id="Hex14"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hex15"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex16"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex17"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex18"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hex19"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex20"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex21"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex22"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex23"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex24"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+    <div class="hex" id="Hex25"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex26"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+    <div class="hex" id="Hex27"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hex28"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id=Hex29><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex30"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex31"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hex32"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex33"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex34"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex35"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex36"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex37"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  
+  <div class="hex" id="Hex-1"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hex-2"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-3"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-4"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-5"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hex-6"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-7"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-8"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-9"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-10"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-11"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+    <div class="hex" id="Hex-12"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-13"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+    <div class="hex" id="Hex-14"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hex-15"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-16"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-17"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-18"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hex-19"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-20"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-21"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-22"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-23"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-24"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+    <div class="hex" id="Hex-25"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-26"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+    <div class="hex" id="Hex-27"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hex-28"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id=Hex-29><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-30"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-31"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hex-32"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-33"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-34"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-35"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-36"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-37"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-38"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-39"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-40"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hex-41"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-42"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-43"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-44"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-45"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-46"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-47"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-48"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-49"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-50"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  
+   
+  <div class="hex" id="Hex-01"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hex-02"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-03"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-04"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-05"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hex-06"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-07"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-08"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-09"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-010"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-011"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+    <div class="hex" id="Hex-012"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-013"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+    <div class="hex" id="Hex-014"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hex-015"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-016"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-017"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-018"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hex-019"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-020"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-021"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-022"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-023"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-024"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+    <div class="hex" id="Hex-025"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-026"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+    <div class="hex" id="Hex-027"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hex-028"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id=Hex-029><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-030"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-031"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hex-032"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-033"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-034"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-035"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-036"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-037"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-038"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-039"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-040"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hex-041"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-042"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-043"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-044"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-045"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-046"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-047"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-048"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-049"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hex-050"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  
+    <div class="hex" id="Hexa-1"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hexa-2"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-3"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-4"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-5"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hexa-6"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-7"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-8"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-9"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-10"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-11"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+    <div class="hex" id="Hexa-12"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-13"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+    <div class="hex" id="Hexa-14"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hexa-15"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-16"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-17"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-18"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hexa-19"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-20"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-21"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-22"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-23"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-24"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+    <div class="hex" id="Hexa-25"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-26"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+    <div class="hex" id="Hexa-27"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hexa-28"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id=Hexa-29><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-30"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-31"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hexa-32"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-33"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-34"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-35"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-36"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-37"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-38"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-39"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-40"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hexa-41"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-42"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-43"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-44"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-45"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-46"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-47"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-48"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-49"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-50"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  
+   
+  <div class="hex" id="Hexa-01"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hexa-02"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-03"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-04"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-05"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hexa-06"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-07"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-08"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-09"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-010"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-011"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+    <div class="hex" id="Hexa-012"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-013"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+    <div class="hex" id="Hexa-014"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hexa-015"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-016"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-017"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-018"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hexa-019"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-020"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-021"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-022"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-023"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-024"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+    <div class="hex" id="Hexa-025"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-026"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+    <div class="hex" id="Hexa-027"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hexa-028"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id=Hexa-029><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-030"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-031"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hexa-032"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-033"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-034"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-035"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-036"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-037"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-038"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-039"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-040"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hexa-041"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-042"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-043"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-044"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-045"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-046"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-047"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-048"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-049"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexa-050"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+   
+    <div class="hex" id="Hexaa-1"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-2"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-3"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-4"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-5"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-6"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-7"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-8"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-9"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-10"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-11"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+    <div class="hex" id="Hexaa-12"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-13"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+    <div class="hex" id="Hexaa-14"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-15"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-16"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-17"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-18"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-19"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-20"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-21"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-22"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-23"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-24"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+    <div class="hex" id="Hexaa-25"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-26"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+    <div class="hex" id="Hexaa-27"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-28"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id=Hexaa-29><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-30"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-31"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-32"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-33"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-34"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-35"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-36"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-37"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-38"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-39"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-40"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-41"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-42"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-43"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-44"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-45"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-46"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-47"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-48"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-49"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-50"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  
+   
+  <div class="hex" id="Hexaa-01"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-02"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-03"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-04"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-05"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-06"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-07"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-08"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-09"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-010"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-011"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+    <div class="hex" id="Hexaa-012"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-013"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+    <div class="hex" id="Hexaa-014"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-015"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-016"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-017"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-018"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-019"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-020"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-021"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-022"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-023"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-024"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+    <div class="hex" id="Hexaa-025"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-026"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+    <div class="hex" id="Hexaa-027"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-028"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id=Hexaa-029><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-030"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-031"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-032"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-033"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-034"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-035"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-036"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-037"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-038"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-039"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-040"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-041"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-042"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-043"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-044"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-045"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-046"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-047"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-048"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-049"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-050"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+   <div class="hex" id="Hexaa-051"><div class="top"></div><div class="middle"></div> <div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-060"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-052"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-053"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-054"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-055"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-056"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-057"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-058"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-059"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-060"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-061"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-062"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-063"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-064"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+  <div class="hex" id="Hexaa-065"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+
 
     <div id="a">
         <button id="header"> Formation
@@ -264,6 +937,8 @@ Prix des Côtes-d'Armor obtenu lors du concours les  Entrep’  <br>(concours de
 <div classe="cue" id="lecube3"></div>
 <div classe="cue" id="lecube4"></div>
 <div classe="cue" id="lecube5"></div>
+<div classe="cue" id="lecube6"></div>
+
 <div class="texte" id="Hobbis"> Voyages<br><br> Volleyball<br><br>Sky,Alpinisme<br><br> Gadget éléctronique </Program></div> 
 
 <div class="texte" id="Date"> 2020<br><br><br>2020<br><br><br>2019-2020<br><br><br>2019</div>
@@ -346,10 +1021,14 @@ document.getElementById("Techniques").onmouseover=function(){
   document.getElementById("Programmation").style.color="goldenrod";
   document.getElementById("Langues").style.color="goldenrod";};
 
-document.getElementById("header").onclick=function(){window.scrollTo(Formation.offsetLeft,Formation.offsetTop);};
-document.getElementById("header2").onclick=function(){window.scrollTo(Competences.offsetLeft,Competences.offsetTop);};
-document.getElementById("header3").onclick=function(){window.scrollTo(Projets.offsetLeft,Projets.offsetTop);};
-document.getElementById("header4").onclick=function(){window.scrollTo(Hobbies.offsetLeft,Hobbies.offsetTop);};
+document.getElementById("header").onclick=function(){window.scrollTo(0,Formation.offsetTop);};
+document.getElementById("header2").onclick=function(){window.scrollTo(0,Competences.offsetTop);};
+document.getElementById("header3").onclick=function(){window.scrollTo(0,Projets.offsetTop);};
+document.getElementById("header4").onclick=function(){window.scrollTo(0,Hobbies.offsetTop);
+
+document.getElementById("lecube5").style.marginLeft="-10%";
+document.getElementById("Hobbis").style.backgroundPosition="0";
+};
 
 
 
@@ -365,6 +1044,7 @@ document.getElementById("lecube3").onmouseout=function(){this.style.borderColor 
 document.getElementById("lecube4").onmouseover=function(){this.style.borderColor  = "white";};
 document.getElementById("lecube4").onmouseout=function(){this.style.borderColor  = "black";
 };
+
 
 
 
