@@ -12,7 +12,8 @@ body {
 overflow-x:hidden;    
   vertical-align: middle;
   min-height: 100vh;
-background:grey;
+background: rgb(99,99,101);
+background: linear-gradient(90deg, rgba(99,99,101,1) 0%, rgba(106,99,87,1) 45%, rgba(131,120,92,1) 75%, rgba(218,165,32,1) 100%);
 }
 
 
@@ -149,7 +150,7 @@ button span:nth-child(4) {--n: 2;}
 }
 #carte{width: 30%;height:auto;transition: 0.2s;margin-top : 57%;margin-left : 70%;position:absolute;}
 #Programmation{margin-top:125%;margin-left:12%;line-height: 2.5em;font-size:2vw;}
-#Techniques{margin-top:125%;margin-left:37%;line-height: 1.5em;font-size:2vw;}
+#Techniques{margin-top:125%;margin-left:35%;line-height: 1.5em;font-size:2vw;}
 #Langues{margin-top:125%;margin-left:75%;line-height: 2.5em;font-size:2vw;}
 #Stage{margin-top:160%;margin-left:12%;line-height: 1.5em;font-size:2vw;}
 #Yo{
@@ -908,8 +909,8 @@ background-clip: text;
 <div id="rectangle"></div>
 <div id="rectangle2"></div>
 
-<div class="texte" id="Yo">   &nbsp     Programmation   &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp
-                                        Techniques   &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp
+<div class="texte" id="Yo">     Programmation   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp
+                                        Techniques   &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp
                                         Langues  &nbsp&nbsp&nbsp
 <span id="Boule"></span></div>
 <div class="texte" id="Programmation"> VHDL <br> Matlab, Python <br>C, Java<br>Html, CSS, javascript</Program></div> 
@@ -1031,8 +1032,8 @@ document.getElementById("Hobbis").style.backgroundPosition="0";
 
 
 
-document.getElementById("lecube1").onmouseover=function(){this.style.borderColor  = "white";};
-document.getElementById("lecube1").onmouseout=function(){this.style.borderColor  = "Black";
+document.getElementById("lecube1").onmouseover=function(){this.style.borderColor  = "white";this.style.backgroundColor  = "black";this.style.zIndex="-1"};
+document.getElementById("lecube1").onmouseout=function(){this.style.borderColor  = "Black";this.style.backgroundColor  = "transparent";this.style.zIndex="10"
 };
 document.getElementById("lecube2").onmouseover=function(){this.style.borderColor  = "white";};
 document.getElementById("lecube2").onmouseout=function(){this.style.borderColor  = "black";
